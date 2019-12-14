@@ -1,0 +1,1481 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Bracket Documentation v2.0</title>
+    <link href="documentation.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <div class="left-panel">
+      <h4 class="logo">bracket</h4>
+      <h6 class="title-label">Introduction</h6>
+      <ul class="left-menu">
+        <li><a href="#gettingstarted">Getting Started</a></li>
+        <li><a href="#nodejs">NodeJS</a></li>
+        <li><a href="#bower">Bower</a></li>
+        <li><a href="#grunt">Grunt</a></li>
+        <li><a href="#sass">SASS</a></li>
+        <li><a href="#running">Running Bracket</a></li>
+      </ul>
+
+      <h6 class="title-label mg-t-40">Stylesheet</h6>
+      <ul class="left-menu">
+        <li><a href="#bootstrap">Bootstrap</a></li>
+        <li><a href="#plugins">Lib</a></li>
+        <li><a href="#utilities">Util</a></li>
+      </ul>
+
+      <h6 class="title-label mg-t-40">HTML Structure</h6>
+      <ul class="left-menu">
+        <li><a href="#header">Header Panel</a></li>
+        <li><a href="#leftbar">Left Sidebar</a></li>
+        <li><a href="#rightbar">Right Sidebar</a></li>
+        <li><a href="#mainpanel">Main Panel</a></li>
+        <li><a href="#components">Elements</a></li>
+      </ul>
+
+      <h6 class="title-label mg-t-40">Javascript</h6>
+      <ul class="left-menu">
+        <li><a href="#collapsedmenu">Collapsed (Icon) Menu</a></li>
+        <li><a href="#expandmenu">Expand Menu</a></li>
+        <li><a href="#submenu">Showing of Sub Menu</a></li>
+        <li><a href="#showleft">Show Left Sidebar</a></li>
+        <li><a href="#showright">Show Right Sidebar</a></li>
+        <li><a href="#hidingsidebar">Hiding Sidebar</a></li>
+        <li><a href="#popover">Popover</a></li>
+      </ul>
+
+      <h6 class="title-label mg-t-40">Other Information</h6>
+      <ul class="left-menu">
+        <li><a href="#knownissue">Known Issue</a></li>
+        <li><a href="#changelog">Changelog</a></li>
+        <li><a href="#references">References</a></li>
+        <li><a href="#support">Customer Support</a></li>
+      </ul>
+
+      <br><br>
+    </div><!-- left-panel -->
+
+
+    <div class="main-wrapper">
+      <div class="main-panel">
+
+        <h1 id="gettingstarted" class="section-title">Bracket Documentation v2.0</h1>
+        <p>Thank you so much for purchasing our theme. If you have any questions that are beyond the scope of this help file, please feel free to email us at <a href="mailto:themepixels@gmail.com">themepixels@gmail.com</a>. Thanks so much!</p>
+
+        <h2 class="section-subtitle">Introduction</h2>
+
+        <p>Bracket, a premium dashboard and app template using flat and minimal design. It is fully responsive built with Bootstrap 4 using SASS preprocessor, HTML5, CSS3 and jQuery plugins. It includes a huge collection of reusable UI components using a very reusable style classes that increases the speed of page time load. It can be used for most type of dashboard and app templates nowadays like analytics, admin or messenger app for your desktpo or mobile applications. Amazing flexibility and reusability. See the demo.</p>
+
+        <h2 class="section-subtitle">Getting Started</h2>
+        <p>This part of the doc will help you to quick start your project and will give you a basic idea about how bracket work. For you to get start open the "themes" folder in templates/ of your download package.</p>
+
+        <h2 class="section-subtitle">What's In The Box</h2>
+        <p>Once you have download the package you will see the following folder structure inside templates/ folder.</p>
+        <table class="table">
+          <thead>
+            <tr>
+              <th class="wd-20p">Folder</th>
+              <th class="wd-80p">Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>app/</td>
+              <td>The html files for ui elements and pages like charts, mailbox, etc.</td>
+            </tr>
+            <tr>
+              <td>css/</td>
+              <td>The css files used in this template. You can use minified version for production.</td>
+            </tr>
+            <tr>
+              <td>img/</td>
+              <td>The images used in demo and preview pages.</td>
+            </tr>
+            <tr>
+              <td>js/</td>
+              <td>main js files used in template demo and other pages.</td>
+            </tr>
+            <tr>
+              <td>lib/</td>
+              <td>This is where all the third parts assets and plugins used in the theme.</td>
+            </tr>
+            <tr>
+              <td>rtl/</td>
+              <td>All inner pages found here including blog, portfolio,shop and more.</td>
+            </tr>
+            <tr>
+              <td>scss/</td>
+              <td>All the style code in sass format used in this template.</td>
+            </tr>
+            <tr>
+              <td>videos/</td>
+              <td>Video file that used in our template demo for full screen video background in homepage header.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2 class="section-subtitle">The Tool</h2>
+        <p>Once you have download the package you will see files that you might not familiar along with the folders listed above.</p>
+        <table class="table">
+          <thead>
+            <tr>
+              <th class="wd-20p">Filename</th>
+              <th class="wd-80p">Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>.gitignore</td>
+              <td>A file that specifies intentionally untracked files that Git should ignore.</td>
+            </tr>
+            <tr>
+              <td>bower.json</td>
+              <td>A manifest file that define packages.</td>
+            </tr>
+            <tr>
+              <td>Gruntfile.js</td>
+              <td>A code used to configure or define tasks and load Grunt plugins.</td>
+            </tr>
+            <tr>
+              <td>index.html</td>
+              <td>The index page that redirect user to app/index.html. Use for in a live preview of this template.</td>
+            </tr>
+            <tr>
+              <td>package.json</td>
+              <td>Grunt will use this file to install dependencies and plugins of grunt.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>Note: If you are still unsure of what's the use of this files, you may want to proceed to the next topic:</p>
+        <ul>
+          <li><a href="#nodejs">NodeJS</a></li>
+          <li><a href="#bower">Bower</a></li>
+          <li><a href="#grunt">Grunt</a></li>
+        </ul>
+
+        <hr id="nodejs">
+
+        <h1 class="section-title">NodeJS</h1>
+        <p>Before installing bower and grunt first you must have NodeJs installed, NodeJS will have npm (node packaged modules). </p>
+
+        <p>Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js' package ecosystem, npm, is the largest ecosystem of open source libraries in the world.</p>
+
+        <small class="tx-muted">Online Reference: <a href="https://nodejs.org/en/" target="_blank">https://nodejs.org/en/</a></small>
+
+        <h2 class="section-subtitle">Installing in Mac</h2>
+        <p>Simply download the <a href="https://nodejs.org/en/#download">Macintosh Installer</a> direct from the nodejs.org web site.</p>
+        <p>If you want to download the package with bash:</p>
+        <div class="pre-wrapper"><pre>curl "https://nodejs.org/dist/latest/node-${VERSION:-$(wget -qO- https://nodejs.org/dist/latest/ | sed -nE 's|.*>node-(.*)\.pkg</a>.*|\1|p')}.pkg" > "$HOME/Downloads/node-latest.pkg" && sudo installer -store -pkg "$HOME/Downloads/node-latest.pkg" -target "/"</pre></div>
+
+        <p>Using Homebrew:</p>
+        <div class="pre-wrapper">
+          <pre>brew install node</pre>
+        </div>
+
+        <h2 class="section-subtitle">Installing in Windows</h2>
+        <p>Simply download the <a href="https://nodejs.org/en/#download">Windows Installer</a> direct from the nodejs.org web site.</p>
+
+        <hr id="bower">
+
+        <h1 class="section-title">Bower</h1>
+        <p>Before installing bower first you must have NodeJs installed, NodeJS will have npm (node packaged modules). Once you finished installing nodejs you can now install bower through npm command. </p>
+
+        <p>Keeping track of all these packages and making sure they are up to date (or set to the specific versions you need) is tricky. Bower to the rescue!</p>
+
+        <p>Bower can manage components that contain HTML, CSS, JavaScript, fonts or even image files. Bower doesn’t concatenate or minify code or do anything else - it just installs the right versions of the packages you need and their dependencies.</p>
+
+        <small class="tx-muted">Online Reference: <a href="https://bower.io/" target="_blank">https://bower.io/</a></small>
+
+        <h2 class="section-subtitle">Installing Bower</h2>
+        <p>Bower is a command line utility. Install it with npm.</p>
+        <div class="pre-wrapper">
+          <pre>$ npm install -g bower</pre>
+        </div><!-- pre-wrapper -->
+        <p>Verify that bower in successfully installed, and version of installed bower will appear.</p>
+        <div class="pre-wrapper">
+          <pre>$ bower --version</pre>
+        </div><!-- pre-wrapper -->
+        <br>
+
+        <hr id="grunt">
+
+        <h1 class="section-title">Grunt JS</h1>
+        <p>Before installing grunt first you must have NodeJs installed, NodeJS will have npm (node packaged modules). </p>
+
+        <p>In one word: automation. The less work you have to do when performing repetitive tasks like minification, compilation, unit testing, linting, etc, the easier your job becomes. After you've configured it through a Gruntfile, a task runner can do most of that mundane work for you—and your team—with basically zero effort.</p>
+
+        <small class="tx-muted">Online Reference: <a href="https://gruntjs.com/" target="_blank">https://gruntjs.com/</a></small>
+
+        <h2 class="section-subtitle">Installing the CLI</h2>
+        <p>In order to get started, you'll want to install Grunt's command line interface (CLI) globally. You may need to use sudo (for OSX, *nix, BSD etc) or run your command shell as Administrator (for Windows) to do this.</p>
+        <div class="pre-wrapper">
+          <pre>$ npm install -g grunt-cli</pre>
+        </div><!-- pre-wrapper -->
+
+        <p>Verify that grunt is successfully installed, and version of installed bower will appear.</p>
+        <div class="pre-wrapper">
+          <pre>$ grunt --version</pre>
+        </div><!-- pre-wrapper -->
+        <br>
+
+        <hr id="sass">
+
+        <h1 class="section-title">SASS</h1>
+        <p>Before running grunt first you must check if you have sass installed in your machine. You can verify that sass is already installed by running the command.</p>
+        <div class="pre-wrapper">
+          <pre>$ sass --version</pre>
+        </div><!-- pre-wrapper -->
+        <p>If version appear, it means sass already installed in your machine and proceed to the next topic, otherwise follow the instructions below on installing sass.</p>
+
+        <h2 class="section-subtitle">Installing SASS</h2>
+
+        <h4>Windows</h4>
+        <p>Before you start using Sass you will need to install Ruby. The fastest way to get Ruby on your Windows computer is to use <a href="http://rubyinstaller.org/">Ruby Installer</a>. It's a single-click installer that will get everything set up for you super fast. </p>
+
+        <h4>Mac</h4>
+        <p>If you prefer the command line over an application then getting Sass set up is a fairly quick process. Sass has a Ruby dependency but if you're using a Mac, congratulations, Ruby comes pre-installed. </p>
+
+        <h4>Install SASS</h4>
+        <p>Ruby uses Gems to manage its various packages of code like Sass. In your open terminal or cmd window: </p>
+        <div class="pre-wrapper">
+          <pre>$ gem install sass</pre>
+        </div><!-- pre-wrapper -->
+        <p>You should now have Sass installed, but it never hurts to double-check.</p>
+        <div class="pre-wrapper">
+          <pre>$ sass --version</pre>
+        </div><!-- pre-wrapper -->
+
+        <br>
+
+        <small class="tx-muted">Online Reference: <a href="http://sass-lang.com/install" target="_blank">http://sass-lang.com/install</a></small>
+
+        <hr id="running">
+
+        <h1 class="section-title">Running Bracket</h1>
+        <p>You're moments away to see the bracket dashboard template up and running in your local machine. First, go to the root folder where the bower.json and package.json located. In your download package it should be in the template/ folder. Please run the following command below.</p>
+
+        <div class="pre-wrapper">
+          <pre>$ bower install</pre>
+        </div><!-- pre-wrapper -->
+
+        <p>This will download all dependencies defined in <strong>bower.json</strong> file. Once it finished running the command, it will generate a folder name <strong>bower_components/</strong> where you see downloaded files.Next, run another command below</p>
+
+        <div class="pre-wrapper">
+          <pre>$ npm install</pre>
+        </div><!-- pre-wrapper -->
+
+        <p>This will download all tools defined in <strong>package.json</strong> file. Once it finished running the command, it will generate a folder name <strong>node_modules/</strong> where you see downloaded tools.Next, run another command below.</p>
+
+        <div class="pre-wrapper">
+          <pre>$ grunt build</pre>
+        </div><!-- pre-wrapper -->
+
+        <p>This will compile sass file into css with minified version of it into the <strong>css/</strong> folder. On the other hand, it will generate a <strong>lib/</strong> folder to extract all needed third party plugins and other resources like fonts to be use in the template.</p>
+
+        <h4>Running in Browser</h4>
+        <p>Now you're good to go in running the template and preview it in browser by running the command below.</p>
+
+        <div class="pre-wrapper">
+          <pre>$ grunt</pre>
+        </div><!-- pre-wrapper -->
+
+        <p>The template is now up and running in your browser. Feel free to visit each page and familiarize the flow of it.</p>
+
+        <hr id="blockbox">
+
+        <h1 class="section-title">Stylesheet</h1>
+        <p>We use SASS in creating styles in this template logically grouping into sections. Below are the structure of sass files and folders</p>
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th class="wd-30p">Folder/File </th>
+              <th class="wd-70p">Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>bootstrap/</td>
+              <td>Contains override styles from Bootstrap core framework for custom design and enhancement</td>
+            </tr>
+            <tr>
+              <td>lib/</td>
+              <td>Contains a custom styles from plugins that override the current design for improvements</td>
+            </tr>
+            <tr>
+              <td>util/</td>
+              <td>Contain a helper and very reusable classes.</td>
+            </tr>
+            <tr>
+              <td>app.scss</td>
+              <td>a core style for the bracket template.</td>
+            </tr>
+            <tr>
+              <td>bracket.scss</td>
+              <td>Imports all scss file into one file for compiling into css</td>
+            </tr>
+            <tr>
+              <td>rtl.scss</td>
+              <td>An additional styles for RTL pages</td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+
+        <hr id="bootstrap">
+
+        <h1 class="section-title">Bootstrap</h1>
+        <p>All of the files organized into a name of element are override styles of Bootstrap core framework styles. It is overriden for performance and design quality improvement purposes.</p>
+        <p>To learn more about Bootstrap, visit their site at <a href="https://getbootstrap.com/" target="_blank">https://getbootstrap.com/</a></p>
+        <br>
+
+        <hr id="plugins">
+
+        <h1 class="section-title">Plugins</h1>
+        <p>All  files organized into a name of plugin are override styles from some of the plugins used in this template and can be found in <strong>lib/</strong> folder. It is also overriden for performance and design quality improvement purposes.</p>
+        <br>
+
+        <hr id="utilities">
+
+        <h1 class="section-title">Utilities</h1>
+        <p>Utilities classes are very reusable classes with a single purpose to reduce the frequency of highly repetitive declarations.</p>
+
+        <p><strong>Note:</strong> Below are some of the classes that we think are more reusable. If you did not find any classes on the list be sure to check the scss files under scss/utilities/ folder if there are any existing classes you need before you can create a new style.</p>
+
+        <h4>Background Color</h4>
+        <table class="table table-code">
+          <thead>
+            <tr>
+              <th class="wd-30p">Class</th>
+              <th class="wd-70p">Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <span class="tx-red">.bg-transparent</span>
+              </td>
+              <td>Sets a transparent background to an element with already have a background color.</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.bg-gray-[value]</span></td>
+              <td>900 | 800 | 700 | 600 | 500 | 400 | 300 | 200 | 100</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.bg-[value]</span></td>
+              <td>primary | success | warning | danger | info | indigo | purple | teal | pink | orange</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.bg-white-[value]</span></td>
+              <td>1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.bg-black-[value]</span></td>
+              <td>1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.bg-[value]</span></td>
+              <td>mantle | reef | transfile | neon | delicate | emerald | mojito | dance | teal-love | crystal-clear | grandeur | flickr | royal | firewatch</td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+
+        <h4>Borders</h4>
+        <table class="table table-code">
+          <thead>
+            <tr>
+              <th class="wd-30p">Class</th>
+              <th class="wd-70p">Value / Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="tx-red">.bd</span></td>
+              <td>Add border in all sides of an element with default color gray and default width of 1px.</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.bd-t</span></td>
+              <td>Add border to top side of element.</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.bd-r</span></td>
+              <td>Add border to right side of element.</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.bd-b</span></td>
+              <td>Add border to bottom side of element.</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.bd-l</span></td>
+              <td>Add border to left side of element.</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.bd-x</span></td>
+              <td>Add border to left and right side of element.</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.bd-y</span></td>
+              <td>Add border to top and bottom side of element.</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.bd</span></td>
+              <td>Set 1px (default) border to element.</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.bd-2</span></td>
+              <td>Set 2px border to element.</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.bd-3</span></td>
+              <td>Set 3px border to element.</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.bd-4</span></td>
+              <td>Set 4px border to element.</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.bd-5</span></td>
+              <td>Set 5px border to element.</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.bd-t-0</span></td>
+              <td>Remove top border of an element</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.bd-r-0</span></td>
+              <td>Remove right border of an element</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.bd-b-0</span></td>
+              <td>Remove bottom border of an element</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.bd-l-0</span></td>
+              <td>Remove left border of an element</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.bd-x-0</span></td>
+              <td>Remove left and right border of an element</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.bd-y-0</span></td>
+              <td>Remove top and bottom border of an element</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.bd-[t||r|bl|x|y]-0-force</span></td>
+              <td>Force remove border of any side of an element. </td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.bd-[value]</span></td>
+              <td>primary | success | warning | danger | info | indigo | purple | pink | teal | orange </td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.bd-gray-[value]</span></td>
+              <td>100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.rounded</span></td>
+              <td>Set a border radius of 3px (default) to an element.</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.rounded-[value]</span></td>
+              <td>5 | 10 | 20 | 30 | 40 | 50 | circle</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.rounded-[value]</span></td>
+              <td>top | right | bottom | left</td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+
+        <h4>Height</h4>
+        <table class="table table-code">
+          <thead>
+            <tr>
+              <th class="wd-30p">Class</th>
+              <th class="wd-70p">Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="tx-red">.ht-[value]</span></td>
+              <td>1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.ht-[value]</span></td>
+              <td>15 | 20 | 25 | 30 | ... | 100 &nbsp; (step of 5)</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.ht-[value]</span></td>
+              <td>150 | 200 | 250 | 300 | ... | 850 &nbsp; (step of 50)</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.ht-[value]p</span></td>
+              <td>10 | 20 | 30 | 40 | ... | 100 &nbsp; (step of 10)</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.ht-[size]-[value]</span></td>
+              <td rowspan="2" class="bd-b-0-force">
+                <p class="mg-b-5">size: xs | sm | md | lg | xl</p>
+                <p class="mg-b-0">value: the height value (refer to code above)</p>
+              </td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.ht-[size]-[value]p</span></td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.ht-100v</span></td>
+              <td>Set a height to an element based on viewport height.</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.ht-auto</span></td>
+              <td>Set an auto height to an element.</td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+
+        <h4>Width</h4>
+        <table class="table table-code">
+          <thead>
+            <tr>
+              <th class="wd-30p">Class</th>
+              <th class="wd-70p">Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="tx-red">.wd-[value]</span></td>
+              <td>1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.wd-[value]</span></td>
+              <td>15 | 20 | 25 | 30 | ... | 100 &nbsp; (step of 5)</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.wd-[value]</span></td>
+              <td>150 | 200 | 250 | 300 | ... | 1000 &nbsp; (step of 50)</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.wd-[value]p</span></td>
+              <td>10 | 20 | 30 | 40 | ... | 100 &nbsp; (step of 10)</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.wd-[size]-[value]</span></td>
+              <td rowspan="2" class="bd-b-0-force">
+                <p class="mg-b-5">size: xs | sm | md | lg | xl</p>
+                <p class="mg-b-0">value: the width value (refer to code above)</p>
+              </td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.wd-[size]-[value]p</span></td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.wd-100v</span></td>
+              <td>Set a width to an element based on viewport width.</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.wd-auto</span></td>
+              <td>Set an auto width to an element.</td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+
+        <h4>Margins</h4>
+        <table class="table table-code">
+          <thead>
+            <tr>
+              <th class="wd-30p">Class</th>
+              <th class="wd-70p">Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <span class="tx-red">.mg-t-[value]</span><br>
+                <span class="tx-red">.mg-r-[value]</span><br>
+                <span class="tx-red">.mg-b-[value]</span><br>
+                <span class="tx-red">.mg-l-[value]</span>
+              </td>
+              <td>1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10</td>
+            </tr>
+            <tr>
+              <td>
+                <span class="tx-red">.mg-t-[value]</span><br>
+                <span class="tx-red">.mg-r-[value]</span><br>
+                <span class="tx-red">.mg-b-[value]</span><br>
+                <span class="tx-red">.mg-l-[value]</span>
+              </td>
+              <td>15 | 20 | 25 | 30 | ... | 120 &nbsp; (step of 5)</td>
+            </tr>
+            <tr>
+              <td>
+                <span class="tx-red">.mg-[size]-t-[value]</span><br>
+                <span class="tx-red">.mg-[size]-r-[value]</span><br>
+                <span class="tx-red">.mg-[size]-b-[value]</span><br>
+                <span class="tx-red">.mg-[size]-l-[value]</span>
+              </td>
+              <td>
+                <p class="mg-b-5">size: xs | sm | md | lg | xl</p>
+                <p class="mg-b-0">value: the margin value (refer to code above)</p>
+              </td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.mg-t-auto</span></td>
+              <td>Set a top margin to auto</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.mg-r-auto</span></td>
+              <td>Set a right margin to auto</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.mg-b-auto</span></td>
+              <td>Set a bottom margin to auto</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.mg-l-auto</span></td>
+              <td>Set a left margin to auto</td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+
+        <h4>Padding</h4>
+        <table class="table table-code">
+          <thead>
+            <tr>
+              <th class="wd-30p">Class</th>
+              <th class="wd-70p">Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <span class="tx-red">.pd-t-[value]</span><br>
+                <span class="tx-red">.pd-r-[value]</span><br>
+                <span class="tx-red">.pd-b-[value]</span><br>
+                <span class="tx-red">.pd-l-[value]</span>
+              </td>
+              <td>1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10</td>
+            </tr>
+            <tr>
+              <td>
+                <span class="tx-red">.pd-t-[value]</span><br>
+                <span class="tx-red">.pd-r-[value]</span><br>
+                <span class="tx-red">.pd-b-[value]</span><br>
+                <span class="tx-red">.pd-l-[value]</span>
+              </td>
+              <td>15 | 20 | 25 | 30 | ... | 120 &nbsp; (step of 5)</td>
+            </tr>
+            <tr>
+              <td>
+                <span class="tx-red">.pd-t-[value]</span><br>
+                <span class="tx-red">.pd-r-[value]</span><br>
+                <span class="tx-red">.pd-b-[value]</span><br>
+                <span class="tx-red">.pd-l-[value]</span>
+              </td>
+              <td>110 | 120 | 130 | 140 | ... | 200 &nbsp; (step of 10)</td>
+            </tr>
+            <tr>
+              <td>
+                <span class="tx-red">.pd-[size]-t-[value]</span><br>
+                <span class="tx-red">.pd-[size]-r-[value]</span><br>
+                <span class="tx-red">.pd-[size]-b-[value]</span><br>
+                <span class="tx-red">.pd-[size]-l-[value]</span>
+              </td>
+              <td>
+                <p class="mg-b-5">size: xs | sm | md | lg | xl</p>
+                <p class="mg-b-0">value: the padding value (refer to code above)</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+
+        <h4>Position</h4>
+        <table class="table table-code">
+          <thead>
+            <tr>
+              <th class="wd-30p">Class</th>
+              <th class="wd-70p">Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="tx-red">.pos-relative</span></td>
+              <td>Set a relative position to an element.</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.pos-absolute</span></td>
+              <td>Set an absolute position to an element.</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.pos-fixed</span></td>
+              <td>Set a fixed position to an element.</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.pos-static</span></td>
+              <td>Set a static position to an element.</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.t-[value]</span></td>
+              <td>0 | 5 | 10 | 15 | ... | 100 (step of 5)</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.r-[value]</span></td>
+              <td>0 | 5 | 10 | 15 | ... | 100 (step of 5)</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.b-[value]</span></td>
+              <td>0 | 5 | 10 | 15 | ... | 100 (step of 5)</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.l-[value]</span></td>
+              <td>0 | 5 | 10 | 15 | ... | 100 (step of 5)</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.x-[value]</span></td>
+              <td>0 | 5 | 10 | 15 | ... | 100 (step of 5)</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.y-[value]</span></td>
+              <td>0 | 5 | 10 | 15 | ... | 100 (step of 5)</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.a-[value]</span></td>
+              <td>0 | 5 | 10 | 15 | ... | 100 (step of 5)</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.t--[value]</span></td>
+              <td>0 | 5 | 10 | 15 | ... | 100 (step of 5)</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.r--[value]</span></td>
+              <td>0 | 5 | 10 | 15 | ... | 100 (step of 5)</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.b--[value]</span></td>
+              <td>0 | 5 | 10 | 15 | ... | 100 (step of 5)</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.l--[value]</span></td>
+              <td>0 | 5 | 10 | 15 | ... | 100 (step of 5)</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.z-index-[value]</span></td>
+              <td>10 | 50 | 100 | 150 | 200</td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+
+        <h4>Typography</h4>
+        <table class="table table-code">
+          <thead>
+            <tr>
+              <th class="wd-30p">Class</th>
+              <th class="wd-70p">Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="tx-red">.tx-[size]</span></td>
+              <td>8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 </td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.tx-[size]</span></td>
+              <td>18 | 20 | 22 | 24 | ... | 140 (step of 2) </td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.tx-[viewport]-[size]</span></td>
+              <td>
+                viewport: xs | sm | md | lg | xl<br>
+                size: 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16
+              </td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.tx-[viewport]-[size]</span></td>
+              <td>
+                viewport: xs | sm | md | lg | xl<br>
+                size: 18 | 20 | 22 | 24 | ... | 140 (step of 2)
+              </td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.tx-[weight]</span></td>
+              <td>bold | semibold | medium | normal | light | thin | xthin</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.tx-[viewport]-[weight]</span></td>
+              <td>
+                viewport: xs | sm | md | lg | xl <br>
+                weight: bold | semibold | medium | normal | light | thin | xthin
+              </td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.tx-[family]</span></td>
+              <td>poppins | hind | firasans (default) | roboto | source</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.tx-[color]</span></td>
+              <td>primary | success | warning | danger | info | indigo | purple | orange | teal | pink | black | white | inverse</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.tx-gray-[num]</span></td>
+              <td>100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.tx-white-[transparency]</span></td>
+              <td>2 | 3 | 4 | 5 | 6 | 7 | 8</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.tx-spacing-[value]</span></td>
+              <td>1 | 2 | 3 | 4 | 5 | 6 | 7 | 8</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.tx-spacing--[value]</span></td>
+              <td>1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 (negative spacing result)</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.lh-[value]</span></td>
+              <td>1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.lh-[viewport]-[value]</span></td>
+              <td>
+                viewport: xs | sm | md | lg | xl <br>
+                value: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p>If you have any questions that are beyond the scope of this class reference, please feel free to email us at <a href="mailto:themepixels@gmail.com">themepixels@gmail.com</a>. Thanks so much!</p>
+
+        <hr>
+
+        <h1 class="section-title">HTML Structure</h1>
+
+        <hr id="header">
+
+        <h2 class="section-subtitle">Header Panel</h2>
+        <p>Below is the html structure of the header of Bracket admin template that includes navicon menu for mobile and non-mobile display. Some of the class found in header are explained below.</p>
+        <pre class="pre-wrapper">&lt;div class=&quot;br-header&quot;&gt;
+  &lt;div class=&quot;br-header-left&quot;&gt;
+    &lt;div class=&quot;navicon-left hidden-md-down&quot;&gt;&lt;a id=&quot;btnLeftMenu&quot; href=&quot;&quot;&gt;&lt;i class=&quot;icon ion-navicon-round&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/div&gt;
+    &lt;div class=&quot;navicon-left hidden-lg-up&quot;&gt;&lt;a id=&quot;btnLeftMenuMobile&quot; href=&quot;&quot;&gt;&lt;i class=&quot;icon ion-navicon-round&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/div&gt;
+    &lt;div class=&quot;input-group hidden-xs-down wd-170 transition&quot;&gt;
+      &lt;input id=&quot;searchbox&quot; type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Search&quot;&gt;
+      &lt;span class=&quot;input-group-btn&quot;&gt;
+        &lt;button class=&quot;btn btn-secondary&quot; type=&quot;button&quot;&gt;&lt;i class=&quot;fa fa-search&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+      &lt;/span&gt;
+    &lt;/div&gt;&lt;!-- input-group --&gt;
+  &lt;/div&gt;&lt;!-- br-header-left --&gt;
+  &lt;div class=&quot;br-header-right&quot;&gt;
+    &lt;nav&gt;...&lt;/nav&gt;
+    &lt;div class=&quot;navicon-right&quot;&gt;
+      &lt;a id=&quot;btnRightMenu&quot; href=&quot;&quot; class=&quot;pos-relative&quot;&gt;
+        &lt;i class=&quot;icon ion-ios-chatboxes-outline&quot;&gt;&lt;/i&gt;
+        &lt;!-- start: if statement --&gt;
+        &lt;span class=&quot;square-8 bg-danger pos-absolute t-10 r--5 rounded-circle&quot;&gt;&lt;/span&gt;
+        &lt;!-- end: if statement --&gt;
+      &lt;/a&gt;
+    &lt;/div&gt;&lt;!-- navicon-right --&gt;
+  &lt;/div&gt;&lt;!-- br-header-right --&gt;
+&lt;/div&gt;&lt;!-- br-header --&gt;</pre>
+
+        <br>
+
+        <table class="table table-code">
+          <thead>
+            <tr>
+              <th class="wd-30p">Class Reference</th>
+              <th class="wd-70p">Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="tx-red">.br-header-left</span></td>
+              <td>The wrapper class of all elements found in left side of the header.</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.br-header-right</span></td>
+              <td>The wrapper class of all elements found in right side of the header.</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.navicon-left</span></td>
+              <td>The icon menu on left that will toggle the left sidebar of page when clicked. There are two navicon-left used with different purpose, one will collapsed the left sidebar into an icon only menu and the other one which will hide and show the left sidebar entirely when clicked.</td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+
+        <table class="table table-code">
+          <thead>
+            <tr>
+              <th class="wd-30p">ID Reference</th>
+              <th class="wd-70p">Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="tx-red">#btnLeftMenu</span></td>
+              <td>This will collapsed the left sidebar into an icon only menu sidebar.</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">#btnLeftMenuMobile</span></td>
+              <td>This will hide and show the left sidebar by pushing the content showing the left sidebar.</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">#btnRightMenu</span></td>
+              <td>This will toggle the right sidebar of the page when clicked.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <hr id="leftbar">
+
+        <h2 class="section-subtitle">Left Sidebar</h2>
+        <p>Below is the html structure of the left sidebar of Bracket admin template that includes menu and icon menu. Some of the class found in left sidebar are explained below.</p>
+
+        <pre class="pre-wrapper">&lt;div class=&quot;br-logo&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;[&lt;/span&gt;bracket&lt;span&gt;]&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;div class=&quot;br-sideleft overflow-y-auto&quot;&gt;
+  &lt;label class=&quot;sidebar-label pd-x-15 mg-t-20&quot;&gt;Navigation&lt;/label&gt;
+  &lt;div class=&quot;br-sideleft-menu&quot;&gt;
+    ...
+    &lt;a href=&quot;#&quot; class=&quot;br-menu-link&quot;&gt;
+      &lt;div class=&quot;br-menu-item&quot;&gt;
+        &lt;i class=&quot;menu-item-icon icon ion-ios-photos-outline tx-20&quot;&gt;&lt;/i&gt;
+        &lt;span class=&quot;menu-item-label&quot;&gt;Cards &amp;amp; Widgets&lt;/span&gt;
+        &lt;i class=&quot;menu-item-arrow fa fa-angle-down&quot;&gt;&lt;/i&gt;
+      &lt;/div&gt;&lt;!-- menu-item --&gt;
+    &lt;/a&gt;&lt;!-- br-menu-link --&gt;
+    &lt;ul class=&quot;br-menu-sub nav flex-column&quot;&gt;
+      ...
+    &lt;/ul&gt;
+    ...
+  &lt;/div&gt;&lt;!-- br-sideleft-menu --&gt;
+&lt;/div&gt;&lt;!-- br-sideleft --&gt;</pre>
+<br>
+        <table class="table table-code">
+          <thead>
+            <tr>
+              <th class="wd-30p">Class Reference</th>
+              <th class="wd-70p">Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="tx-red">.br-sideleft</span></td>
+              <td>The left sidebar navigation of the template.</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.overflow-y-auto</span></td>
+              <td>This will enable left sidebar menu to be scrollable.</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.br-menu-link</span></td>
+              <td>The top level menu of left sidebar.</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.br-menu-link.active</span></td>
+              <td>The will highlight a top level menu</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.br-menu-link.active.show-sub</span></td>
+              <td>Not only this will highlight the top level menu, it will also show the sub menu next to it.</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.br-menu-sub</span></td>
+              <td>The sub navigation of menu using &lt;ul&gt; tag element.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <hr id="rightbar">
+
+        <h2 class="section-subtitle">Right Sidebar</h2>
+        <p>Below is the html structure of the right sidebar of Bracket admin template that includes a list of users and files, dates and some settings. Some of the class found in right sidebar are explained below.</p>
+
+        <pre class="pre-wrapper">&lt;div class=&quot;br-sideright&quot;&gt;
+  &lt;ul class=&quot;nav nav-tabs sidebar-tabs&quot; role=&quot;tablist&quot;&gt;...&lt;/ul&gt;
+  &lt;div class=&quot;tab-content&quot;&gt;
+    &lt;div class=&quot;tab-pane&quot;&gt;...&lt;/div&gt;
+    ...
+  &lt;/div&gt;&lt;!-- tab-content --&gt;
+&lt;/div&gt;&lt;!-- br-sideright --&gt;</pre><br>
+
+        <table class="table table-code">
+          <thead>
+            <tr>
+              <th class="wd-30p">Class Reference</th>
+              <th class="wd-70p">Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="tx-red">.br-sideright</span></td>
+              <td>The right sidebar menu of the template.</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.sidebar-tabs</span></td>
+              <td>The right sidebar tabs navigation of the template.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <hr id="mainpanel">
+
+        <h2 class="section-subtitle">Main Panel</h2>
+        <p>Below is the html structure of the main panel of Bracket admin template that wraps the contents of the page.</p>
+
+        <pre class="pre-wrapper">&lt;div class=&quot;br-mainpanel&quot;&gt;
+  &lt;div class=&quot;br-pageheader pd-y-15 pd-l-20&quot;&gt;
+    &lt;nav class=&quot;breadcrumb pd-0 mg-0 tx-12&quot;&gt;...&lt;/nav&gt;
+  &lt;/div&gt;&lt;!-- br-pageheader --&gt;
+  &lt;div class=&quot;d-sm-flex align-items-center pd-t-15 pd-sm-t-25 pd-x-20 pd-sm-x-30&quot;&gt;
+    &lt;i class=&quot;icon ion-ios-filing-outline tx-70 lh-0 tx-gray-800&quot;&gt;&lt;/i&gt;
+    &lt;div class=&quot;pd-sm-l-20&quot;&gt;
+      &lt;h4 class=&quot;tx-gray-800 mg-b-5&quot;&gt;Page Title&lt;/h4&gt;
+      &lt;p class=&quot;mg-b-0&quot;&gt;Some description&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;&lt;!-- d-flex --&gt;
+
+  &lt;div class=&quot;br-pagebody&quot;&gt;
+    &lt;!-- this is where your contents will be added --&gt;
+  &lt;/div&gt;&lt;!-- br-pagebody --&gt;
+
+&lt;/div&gt;&lt;!-- br-mainpanel --&gt;</pre><br>
+
+        <table class="table table-code">
+          <thead>
+            <tr>
+              <th class="wd-30p">Class Reference</th>
+              <th class="wd-70p">Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="tx-red">.br-mainpanel</span></td>
+              <td>The main panel of the template.</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.br-pageheader</span></td>
+              <td>The breadcrumb wrapper of the page.</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.br-pagebody</span></td>
+              <td>The wrapper of all the contents that will be added in the page.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <hr id="components">
+
+        <h2 class="section-subtitle">Elements</h2>
+        <p>The HTML Markup of alerts, buttons, etc. are explained in the live preview of this template. Feel free to use it in your page. Any components that are beyond of this template, may submit a request and suggestion to our email at <a href="mailto:themepixels@gmail.com">themepixels@gmail.com</a></p>
+
+        <hr>
+
+        <h1 class="section-title">Javascipt</h1>
+
+        <hr id="collapsedmenu">
+
+        <h2 class="section-subtitle">Collapsed (Icon) Menu</h2>
+        <p>The collapsed menu is the left sidebar menu being collapsed and showing only the icons after clicking the navicon menu on left side of the header of the template.</p>
+
+        <small>HTML Markup</small>
+        <pre class="pre-wrapper">&lt;a id=&quot;btnLeftMenu&quot; href=&quot;&quot;&gt;&lt;i class=&quot;icon ion-navicon-round&quot;&gt;&lt;/i&gt;&lt;/a&gt;</pre><br>
+
+        <small>Javascript Code:</small>
+        <pre class="pre-wrapper">// This will collapsed sidebar menu on left into a mini icon menu
+$('#btnLeftMenu').on('click', function(){
+  var menuText = $('.menu-item-label,.menu-item-arrow');
+
+  if($('body').hasClass('collapsed-menu')) {
+    $('body').removeClass('collapsed-menu');
+
+    // show current sub menu when reverting back from collapsed menu
+    $('.show-sub + .br-menu-sub').slideDown();
+
+    $('.br-sideleft').one('transitionend', function(e) {
+      menuText.removeClass('op-lg-0-force');
+      menuText.removeClass('d-lg-none');
+    });
+
+  } else {
+    $('body').addClass('collapsed-menu');
+
+    // hide toggled sub menu
+    $('.show-sub + .br-menu-sub').slideUp();
+
+    menuText.addClass('op-lg-0-force');
+    $('.br-sideleft').one('transitionend', function(e) {
+      menuText.addClass('d-lg-none');
+    });
+  }
+  return false;
+});</pre><br>
+
+        <hr id="expandmenu">
+
+        <h2 class="section-subtitle">Expand Menu</h2>
+        <p>The expand menu is the left sidebar menu being expanded from collapsed showing not only just the icon but also its label when the left sidebar is hovered.</p>
+
+        <pre class="pre-wrapper">// This will expand the icon menu when mouse cursor points anywhere
+// inside the sidebar menu on left. This will only trigget to left sidebar
+// when it's in collapsed mode (the icon only menu)
+$(document).on('mouseover', function(e){
+  e.stopPropagation();
+
+  if($('body').hasClass('collapsed-menu') &amp;&amp; $('#btnLeftMenu').is(':visible')) {
+    var targ = $(e.target).closest('.br-sideleft').length;
+    if(targ) {
+      $('body').addClass('expand-menu');
+
+      // show current shown sub menu that was hidden from collapsed
+      $('.show-sub + .br-menu-sub').slideDown();
+
+      var menuText = $('.menu-item-label,.menu-item-arrow');
+      menuText.removeClass('d-lg-none');
+      menuText.removeClass('op-lg-0-force');
+
+    } else {
+      $('body').removeClass('expand-menu');
+
+      // hide current shown menu
+      $('.show-sub + .br-menu-sub').slideUp();
+
+      var menuText = $('.menu-item-label,.menu-item-arrow');
+      menuText.addClass('op-lg-0-force');
+      menuText.addClass('d-lg-none');
+    }
+  }
+});</pre><br>
+
+        <hr id="submenu">
+
+        <h2 class="section-subtitle">Showing of Sub Menu</h2>
+        <p>The sub menu are hidden by default and can only be shown when its parent menu is active or clicked. If the parent menu is active during page load, its sub menu will also displayed.</p>
+
+        <pre class="pre-wrapper">// This will auto show sub menu using the slideDown()
+// when top level menu have a class of .show-sub
+$('.show-sub + .br-menu-sub').slideDown();
+
+// This will show sub navigation menu on left sidebar
+// only when that top level menu have a sub menu on it.
+$('.br-menu-link').on('click', function(){
+  var nextElem = $(this).next();
+  var thisLink = $(this);
+
+  if(nextElem.hasClass('br-menu-sub')) {
+
+    if(nextElem.is(':visible')) {
+      thisLink.removeClass('show-sub');
+      nextElem.slideUp();
+    } else {
+      $('.br-menu-link').each(function(){
+        $(this).removeClass('show-sub');
+      });
+
+      $('.br-menu-sub').each(function(){
+        $(this).slideUp();
+      });
+
+      thisLink.addClass('show-sub');
+      nextElem.slideDown();
+    }
+    return false;
+  }
+});</pre><br>
+
+        <hr id="showleft">
+
+        <h2 class="section-subtitle">Show Left Sidebar</h2>
+        <p>The left sidebar is hidden when using smaller screen devices and shows up only when user click on the left navicon of the header. When clicked, the content will be pushed to the right along with the left sidebar that slides from the left to the right.</p>
+
+        <pre class="pre-wrapper">// This will trigger only when viewed in small devices
+// #btnLeftMenuMobile element is hidden in desktop but
+// visible in mobile. When clicked the left sidebar menu
+// will appear pushing the main content.
+$('#btnLeftMenuMobile').on('click', function(){
+  $('body').addClass('show-left');
+  return false;
+});</pre><br>
+
+        <hr id="showright">
+
+        <h2 class="section-subtitle">Show Right Sidebar</h2>
+        <p>The right sidebar is hidden all the time and will only show up when user clicked on the icon located on the right side of the header of the template. The right sidebar consists of 4 tabs that will switch you between their contents.</p>
+
+        <pre class="pre-wrapper">// This is the right menu icon when it's clicked, the
+// right sidebar will appear that contains the four tab menu
+$('#btnRightMenu').on('click', function(){
+  $('body').addClass('show-right');
+  return false;
+});</pre><br>
+
+        <hr id="hidingsidebar">
+
+        <h2 class="section-subtitle">Hiding Sidebar</h2>
+        <p>There is no menu that will let you hide both the left and right sidebar. For you to hide it you only need to click anywhere outside of it. This is applicable for both left sidebar and right sidebar.</p>
+
+        <pre class="pre-wrapper">// This will hide sidebar when it's clicked outside of it
+$(document).on('click', function(e){
+  e.stopPropagation();
+
+  // closing left sidebar
+  if($('body').hasClass('show-left')) {
+    var targ = $(e.target).closest('.br-sideleft').length;
+    if(!targ) {
+      $('body').removeClass('show-left');
+    }
+  }
+
+  // closing right sidebar
+  if($('body').hasClass('show-right')) {
+    var targ = $(e.target).closest('.br-sideright').length;
+    if(!targ) {
+      $('body').removeClass('show-right');
+    }
+  }
+});</pre><br>
+
+        <hr id="popover">
+
+        <h2 class="section-subtitle">Popover</h2>
+        <p>By default, Bootstrap doesn't auto close popover after appearing in the page resulting other popover overlap each other. By adding the code below it will auto dismiss a popover when clicking anywhere outside of it.</p>
+
+        <pre class="pre-wrapper">$(document).on('click', function (e) {
+  $('[data-toggle="popover"],[data-original-title]').each(function () {
+      //the 'is' for buttons that trigger popups
+      //the 'has' for icons within a button that triggers a popup
+      if (!$(this).is(e.target) &amp;&amp; $(this).has(e.target).length === 0 &amp;&amp; $('.popover').has(e.target).length === 0) {
+          (($(this).popover('hide').data('bs.popover')||{}).inState||{}).click = false  // fix for BS 3.3.6
+      }
+  });
+});</pre>
+
+        <br>
+
+        <hr id="knownissue">
+
+        <h1 class="section-title">Known Issue</h1>
+        <br>
+
+        <ul>
+          <li>
+            <p class="tx-medium tx-dark">Not displaying font icons in opening the html files directly in a browser.</p>
+            <p>A page loaded from a file:// URI, only files in (or below) the same directory of the filesystem are considered to be "same origin", and so putting the font in a different subtree (../font/) means it will be blocked by security policy restrictions. Most browser disables cross-domain fonts "by default. By fixing this, you need to put the file in a remote or local server. Anyway, that what where we're going.</p>
+          </li>
+        </ul>
+
+
+
+        <br>
+
+        <hr id="changelog">
+
+        <h1 class="section-title">Changelog</h1>
+
+        <h2>v2.0</h2>
+        <ul>
+          <li>Updated to Bootstrap 4</li>
+          <li>Completely different to older version (everything new)</li>
+        </ul>
+
+        <h2>v1.x</h2>
+        <ul>
+          <li>See docs for version 1.x</li>
+        </ul>
+
+        <hr id="references">
+
+        <h1 class="section-title">References</h1>
+        <br>
+        <table class="table">
+          <thead>
+            <tr>
+              <th class="wd-30p">Plugins</th>
+              <th class="wd-70p">Link</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Bootstrap</td>
+              <td><a href="https://getbootstrap.com/">https://getbootstrap.com/</a></td>
+            </tr>
+            <!--
+            <tr>
+              <td></td>
+              <td><a href=""></a></td>
+            </tr>
+            -->
+            <tr>
+              <td>animate.css</td>
+              <td><a href="http://daneden.me/animate">http://daneden.me/animate</a></td>
+            </tr>
+            <tr>
+              <td>Bootstrap Tagsinput</td>
+              <td><a href="https://github.com/bootstrap-tagsinput/bootstrap-tagsinput">https://github.com/bootstrap-tagsinput/bootstrap-tagsinput</a></td>
+            </tr>
+            <tr>
+              <td>Chart JS</td>
+              <td><a href="http://www.chartjs.org/">http://www.chartjs.org/</a></td>
+            </tr>
+            <tr>
+              <td>Chartist</td>
+              <td><a href="http://www.chartjs.org/">http://www.chartjs.org/</a></td>
+            </tr>
+            <tr>
+              <td>CodeMirror</td>
+              <td><a href="http://codemirror.net/">http://codemirror.net/</a></td>
+            </tr>
+            <tr>
+              <td>DataTables</td>
+              <td><a href="https://datatables.net/">https://datatables.net/</a></td>
+            </tr>
+            <tr>
+              <td>ECharts</td>
+              <td><a href="https://ecomfe.github.io/echarts-doc/public/en/index.html">https://ecomfe.github.io/echarts-doc/public/en/index.html</a></td>
+            </tr>
+            <tr>
+              <td>Flot</td>
+              <td><a href="http://www.flotcharts.org/">http://www.flotcharts.org/</a></td>
+            </tr>
+            <tr>
+              <td>FontAwesome</td>
+              <td><a href="http://fontawesome.io/">http://fontawesome.io/</a></td>
+            </tr>
+            <tr>
+              <td>Ionicons</td>
+              <td><a href="http://ionicons.com/">http://ionicons.com/</a></td>
+            </tr>
+            <tr>
+              <td>Highlight JS</td>
+              <td><a href="https://highlightjs.org/">https://highlightjs.org/</a></td>
+            </tr>
+            <tr>
+              <td>jCrop</td>
+              <td><a href="http://deepliquid.com/content/Jcrop.html">http://deepliquid.com/content/Jcrop.html</a></td>
+            </tr>
+            <tr>
+              <td>jQuery Switchbutton</td>
+              <td><a href="https://github.com/olance/jQuery-switchButton">https://github.com/olance/jQuery-switchButton</a></td>
+            </tr>
+            <tr>
+              <td>jQuery Toggles</td>
+              <td><a href="https://simontabor.com/labs/toggles/">https://simontabor.com/labs/toggles/</a></td>
+            </tr>
+            <tr>
+              <td>Perfect Scrollbar</td>
+              <td><a href="http://utatti.github.io/perfect-scrollbar/">http://utatti.github.io/perfect-scrollbar/</a></td>
+            </tr>
+            <tr>
+              <td>Select2</td>
+              <td><a href="https://select2.org/">https://select2.org/</a></td>
+            </tr>
+            <tr>
+              <td>ion.RangeSlider</td>
+              <td><a href="http://ionden.com/a/plugins/ion.rangeSlider/en.html">http://ionden.com/a/plugins/ion.rangeSlider/en.html</a></td>
+            </tr>
+            <tr>
+              <td>Leaflet</td>
+              <td><a href="http://leafletjs.com/">http://leafletjs.com/</a></td>
+            </tr>
+            <tr>
+              <td>GMaps</td>
+              <td><a href="http://hpneo.github.io/gmaps/">http://hpneo.github.io/gmaps/</a></td>
+            </tr>
+            <tr>
+              <td>Moment JS</td>
+              <td><a href="https://momentjs.com/">https://momentjs.com/</a></td>
+            </tr>
+            <tr>
+              <td>Morris JS</td>
+              <td><a href="http://morrisjs.github.io/morris.js/">http://morrisjs.github.io/morris.js/</a></td>
+            </tr>
+            <tr>
+              <td>Peity</td>
+              <td><a href="http://benpickles.github.io/peity/">http://benpickles.github.io/peity/</a></td>
+            </tr>
+            <tr>
+              <td>MaskedInput</td>
+              <td><a href="http://digitalbush.com/projects/masked-input-plugin/">http://digitalbush.com/projects/masked-input-plugin/</a></td>
+            </tr>
+            <tr>
+              <td>Sparkline</td>
+              <td><a href="http://digitalbush.com/projects/masked-input-plugin/">http://digitalbush.com/projects/masked-input-plugin/</a></td>
+            </tr>
+            <tr>
+              <td>jQuery Steps</td>
+              <td><a href="http://www.jquery-steps.com/">http://www.jquery-steps.com/</a></td>
+            </tr>
+            <tr>
+              <td>jQVMap</td>
+              <td><a href="https://jqvmap.com/">https://jqvmap.com/</a></td>
+            </tr>
+            <tr>
+              <td>TimePicker</td>
+              <td><a href="http://jonthornton.github.io/jquery-timepicker/">http://jonthornton.github.io/jquery-timepicker/</a></td>
+            </tr>
+            <tr>
+              <td>Medium Editor</td>
+              <td><a href="https://github.com/yabwe/medium-editor">https://github.com/yabwe/medium-editor</a></td>
+            </tr>
+            <tr>
+              <td>Moment</td>
+              <td><a href="https://momentjs.com/">https://momentjs.com/</a></td>
+            </tr>
+            <tr>
+              <td>Parsley</td>
+              <td><a href="http://parsleyjs.org/">http://parsleyjs.org/</a></td>
+            </tr>
+            <tr>
+              <td>Rickshaw</td>
+              <td><a href="http://code.shutterstock.com/rickshaw/">http://code.shutterstock.com/rickshaw/</a></td>
+            </tr>
+            <tr>
+              <td>Spectrum</td>
+              <td><a href="https://bgrins.github.io/spectrum/">https://bgrins.github.io/spectrum/</a></td>
+            </tr>
+            <tr>
+              <td>SpinKit</td>
+              <td><a href="http://tobiasahlin.com/spinkit/">http://tobiasahlin.com/spinkit/</a></td>
+            </tr>
+            <tr>
+              <td>Summernote</td>
+              <td><a href="http://summernote.org">https://summernote.org/</a></td>
+            </tr>
+          </tbody>
+        </table>
+
+
+        <br>
+
+        <hr id="support">
+
+        <h1 class="section-title">Customer Support</h1>
+
+        <p> You can request for support via email or themeforest item comments <a href="https://themeforest.net/item/bracket-responsive-bootstrap-4-admin-template/6894362">here</a></p>
+        <p>We will assist you any problem you encounter while buidling your dashboard via Bracket template</p>
+        <p>Email: <a href="mailto:themepixels@gmail.com">themepixels@gmail.com</a> </p>
+        <p>We use comment help form found <a href="https://themeforest.net/item/bracket-responsive-bootstrap-4-admin-template/6894362">here</a> and email to manage customer support. Soon, as we grow, we will invest and find the best customer support system we can use to serve you better. For the meantime, submit a help request to the link given for any issues and concerns that you have. Don't worry, we will respond to you as quickly as we can. Thank you.</p>
+
+        <br>
+        <hr>
+        <small>&copy; 2017. Bracket Documentation v2.0. All Rights Reserved. Created by: ThemePixels</small>
+
+      </div><!-- main-panel -->
+    </div><!-- main-wrapper -->
+  </body>
+</htmL>
